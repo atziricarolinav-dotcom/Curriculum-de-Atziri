@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Currículum - Atziri Carolina Velazquez Olvera</title>
+  <style>
+    :root {
+      --accent: #2b6cb0;
+      --muted: #6b7280;
+      --bg: #f7fafc;
+      --card: #ffffff;
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    header {
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #111827;
+    }
+    header p {
+      margin: 4px 0 0 0;
+      color: var(--muted);
+    }
+    .photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .photo img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 4px solid #fff;
+      box-shadow: 0 6px 18px rgba(43,108,176,0.12);
+    }
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .contact-item {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .section {
+      padding: 18px 32px;
+      border-top: 1px solid #eef2f7;
+    }
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      color: var(--accent);
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    ul.skills li {
+      background: #eef6ff;
+      padding: 6px 10px;
+      border-radius: 8px;
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    footer {
+      padding: 18px 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width:600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .photo img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    
+    <!-- ENCABEZADO -->
+    <header>
+      <div class="photo" aria-label="Foto de perfil">
+        <img src="imagenes/gato.png" alt="Foto de perfil">
+      </div>
+      <div>
+        <h1>Atziri Carolina Velazquez Olvera</h1>
+        <p>Estudiante / Ingeniera en Sistemas Computacionales</p>
+        <div class="contact-list" aria-label="Información de contacto">
+          <div class="contact-item"><strong>Domicilio:</strong> Flaviano Ramos #162A</div>
+          <div class="contact-item"><strong>Teléfono:</strong> 3322514832</div>
+          <div class="contact-item"><strong>Email:</strong> <a href="mailto:l22940425@tlajomulco.tecnm.mx">l22940425@tlajomulco.tecnm.mx</a></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECCIONES -->
+    <div class="section" aria-labelledby="formacion">
+      <h2 id="formacion">Formación Académica</h2>
+      <p>Ingeniería en Sistemas Computacionales — Instituto Tecnológico (en curso)</p>
+    </div>
+
+    <div class="section" aria-labelledby="habilidades">
+      <h2 id="habilidades">Habilidades</h2>
+      <ul class="skills">
+        <li>Programación: Delphi / Python / JavaScript</li>
+        <li>Bases de datos: PostgreSQL / MySQL</li>
+        <li>Desarrollo web: HTML, CSS, JavaScript</li>
+        <li>Control de versiones: Git</li>
+        <li>Inglés: Dominio (oral y escrito)</li>
+      </ul>
+    </div>
+
+    <div class="section" aria-labelledby="perfil">
+      <h2 id="perfil">Perfil Profesional</h2>
+      <p>Apasionada por el desarrollo de soluciones de software orientadas a la optimización de procesos y la conservación de recursos. Experiencia en proyectos académicos relacionados con automatización y gestión de datos. Capacidad para trabajar en equipo, aprender rápido y comunicar resultados técnicos a audiencias no técnicas.</p>
+    </div>
+
+    <div class="section" aria-labelledby="proyectos">
+      <h2 id="proyectos">Proyectos Relevantes</h2>
+      <div class="two-col">
+        <div>
+          <strong>HydroLoop</strong>
+          <p style="margin:6px 0 0 0;color:var(--muted);font-size:14px;">
+            Proyecto para reciclaje de agua fría desde tuberías para ahorro de agua doméstica.
+          </p>
+        </div>
+        <div>
+          <strong>Interfaz de dibujo (Delphi)</strong>
+          <p style="margin:6px 0 0 0;color:var(--muted);font-size:14px;">
+            Herramienta para dibujar y transformar polígonos regulares con configuraciones personalizables.
+          </p>
+        </div>
+        <div>
+          <strong>INNOVA 2025 – Trampa de luz LED para plagas agrícolas</strong>
+          <p style="margin:6px 0 0 0;color:var(--muted);font-size:14px;">
+            Participación en la creación de una trampa de luz LED para plagas de cultivos. Rol como <em>expositora</em> y 
+            <em>encargada del plan de negocios</em>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div><strong>Disponibilidad:</strong> Inmediata</div>
+      <div style="margin-top:6px;"><strong>Referencias:</strong> Disponibles a solicitud.</div>
+    </footer>
+  </div>
+</body>
+</html>
